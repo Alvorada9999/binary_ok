@@ -3,6 +3,9 @@ name = "binary_ok"
 version = "0.1.0"
 authors = ["Kenedy-Henrique <kenedyhenrique.buenosilva@gmail.com>"]
 edition = "2018"
+repository = "https://github.com/Kenedy-Henrique/binary_ok"
+license-file = "LICENSE.txt"
+description = "A crate to help you convert from binary to decimal and from decimal to binary, you can pass as reference a floating-point number."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
