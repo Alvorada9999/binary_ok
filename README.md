@@ -1,5 +1,9 @@
 # binary_ok
 
+Put this on your cargo.toml file to use this crate:
+```
+[dependencies]
+binary_ok = "0.1.0"
 ```
 use::binary_ok;
 
