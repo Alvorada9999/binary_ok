@@ -1,6 +1,6 @@
 [package]
 name = "binary_ok"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Kenedy-Henrique <kenedyhenrique.buenosilva@gmail.com>"]
 edition = "2018"
 repository = "https://github.com/Kenedy-Henrique/binary_ok"
