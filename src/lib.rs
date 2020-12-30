@@ -71,3 +71,37 @@ pub fn to_decimal(number: &f64) -> f64 {
     //----------------------------------
     decimal_number_result
 }
+
+pub fn u128_to_binary(number: &u128) -> u128 {
+    
+    let mut decimal_number: u128 = number.to_string().parse().unwrap();
+    let mut bits_string = String::from("");
+
+    //The aboves convert the integer part of the number to binary and puts it on the bits_string
+    while decimal_number >= 1 {
+        bits_string.push_str(&(decimal_number % 2).to_string());
+        decimal_number = decimal_number / 2;
+    }
+    bits_string = bits_string.chars().rev().collect::<String>();
+    //----------------------------------
+    return bits_string.parse::<u128>().unwrap();
+}
+
+pub fn u128_to_decimal(binary_number: &u128) -> u128 {
+
+    let bits_string: &str = &binary_number.to_string();
+    let bits_string_iterator = bits_string.split("");
+    let mut decimal_number_result: u128 = 0;
+
+    //The part aboves convert the binary_number to decimal
+    for i in bits_string_iterator {
+        match i {
+            "1" => decimal_number_result = decimal_number_result * 2 + 1,
+            "0" => decimal_number_result = decimal_number_result * 2,
+            "." => break,
+            _ => ()
+        }
+    }
+    //----------------------------------
+    decimal_number_result
+}
