@@ -5,7 +5,7 @@ You can use real and integers numbers, as you wish.
 Put this on your cargo.toml file to use this crate:
 ```
 [dependencies]
-binary_ok = "0.1.1"
+binary_ok = "0.2.0"
 ```
 If you are not using f32 or f64, just use the u128 versions functions, that way you are able to do some math on the flow.
 ```
